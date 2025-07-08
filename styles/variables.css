@@ -1,0 +1,60 @@
+:root {
+  /* Colors */
+  --color-bg: #f8f6f3;
+  --color-bg-dark: #232323;
+  --color-text: #232323;
+  --color-text-light: #f8f6f3;
+  --color-accent: #bfae9c;
+  --color-accent-dark: #4a5a4a;
+  --color-border: #e0dedb;
+  --color-success: #6e8b6e;
+  --color-error: #b85c5c;
+  --color-divider: #e8e6e3;
+  --color-footer-bg: #f0eee9;
+  --color-card-shadow: rgba(36, 36, 36, 0.06);
+  --color-card-shadow-hover: rgba(36, 36, 36, 0.12);
+  --color-button-shadow: rgba(191, 174, 156, 0.12);
+
+  /* Typography */
+  --font-primary: 'Inter', 'Poppins', 'Montserrat', Arial, sans-serif;
+  --font-size-xs: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 2.5rem;
+  --font-size-3xl: 3rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 6rem;
+
+  /* Layout */
+  --radius: 8px;
+  --radius-sm: 4px;
+  --radius-lg: 12px;
+  --transition: 0.2s cubic-bezier(.4,0,.2,1);
+  --transition-slow: 0.3s cubic-bezier(.4,0,.2,1);
+  --shadow: 0 2px 8px var(--color-card-shadow);
+  --shadow-lg: 0 4px 24px var(--color-card-shadow-hover);
+  --shadow-button: 0 2px 8px var(--color-button-shadow);
+  --max-width: 1200px;
+  --header-height: 72px;
+
+  /* Section dividers */
+  --divider-height: 1px;
+  --divider-color: var(--color-divider);
+  --section-padding: var(--spacing-2xl) 0;
+  --section-padding-sm: var(--spacing-xl) 0;
+} 

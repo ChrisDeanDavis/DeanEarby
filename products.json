@@ -1,0 +1,26 @@
+[
+  {
+    "id": "serum-clarity",
+    "name": "Clarity Facial Serum",
+    "price": 54,
+    "image": "assets/images/serum-clarity.jpg",
+    "description": "A lightweight, fast-absorbing serum designed to balance and brighten all skin types.",
+    "ingredients": "Vitamin C, Niacinamide, Hyaluronic Acid, Green Tea Extract"
+  },
+  {
+    "id": "moisture-veil",
+    "name": "Moisture Veil Cream",
+    "price": 48,
+    "image": "assets/images/moisture-veil.jpg",
+    "description": "A rich, nourishing moisturizer that hydrates without heaviness. Suitable for day and night.",
+    "ingredients": "Squalane, Shea Butter, Ceramides, Aloe Vera"
+  },
+  {
+    "id": "beard-balm",
+    "name": "Universal Beard Balm",
+    "price": 36,
+    "image": "assets/images/beard-balm.jpg",
+    "description": "A conditioning balm for beards and bare skin alike. Softens, tames, and protects.",
+    "ingredients": "Jojoba Oil, Argan Oil, Mango Butter, Vitamin E"
+  }
+] 

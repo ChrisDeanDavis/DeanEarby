@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dean Earby</title>
+    <meta name="description" content="Get in touch with Dean Earby. We're here to help with product questions, orders, and support.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <script src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
+</head>
+<body>
+    <div id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY" data-config-modal-style="side"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">Dean Earby</a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-icon" onclick="Snipcart.api.theme.cart.open()">
+                    🛒
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="hamburger" onclick="toggleMobileNav()">☰</button>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-links">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="shop.html" class="mobile-nav-link">Shop</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="contact.html" class="mobile-nav-link active">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Header -->
+    <section class="section" style="padding-top: calc(var(--header-height) + var(--spacing-2xl));">
+        <div class="container">
+            <h1 class="text-center mb-lg">Get in Touch</h1>
+            <p class="text-center mb-xl" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+                Have questions about our products or need help with your order? We're here to help. Send us a message and we'll get back to you within 24 hours.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name *</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select id="subject" name="subject" class="form-input">
+                            <option value="">Select a topic</option>
+                            <option value="product-question">Product Question</option>
+                            <option value="order-support">Order Support</option>
+                            <option value="shipping-returns">Shipping & Returns</option>
+                            <option value="general-inquiry">General Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-textarea" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-large" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section" style="background: var(--color-footer-bg);">
+        <div class="container">
+            <h2 class="text-center mb-xl">Other Ways to Reach Us</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-xl);">
+                <div class="text-center">
+                    <h3 class="mb-md">Email</h3>
+                    <p><a href="mailto:support@deanearby.com">support@deanearby.com</a></p>
+                    <p style="font-size: var(--font-size-xs); color: var(--color-text);">We typically respond within 24 hours</p>
+                </div>
+                
+                <div class="text-center">
+                    <h3 class="mb-md">Customer Service</h3>
+                    <p>Monday - Friday</p>
+                    <p>9:00 AM - 6:00 PM EST</p>
+                </div>
+                
+                <div class="text-center">
+                    <h3 class="mb-md">Follow Us</h3>
+                    <p><a href="#" target="_blank">Instagram</a></p>
+                    <p><a href="#" target="_blank">Twitter</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-xl">Frequently Asked Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="mb-lg">
+                    <h3 class="mb-md">How do I choose the right products for my skin type?</h3>
+                    <p>Our products are designed to work with all skin types. If you're unsure where to start, we recommend beginning with our Gentle Face Cleanser and Daily Moisturizer. For personalized recommendations, feel free to reach out to our customer service team.</p>
+                </div>
+                
+                <div class="section-divider"></div>
+                
+                <div class="mb-lg">
+                    <h3 class="mb-md">Are your products suitable for sensitive skin?</h3>
+                    <p>Yes, all our products are formulated to be gentle and suitable for sensitive skin. We avoid common irritants and use soothing ingredients. However, we always recommend patch testing new products before full application.</p>
+                </div>
+                
+                <div class="section-divider"></div>
+                
+                <div class="mb-lg">
+                    <h3 class="mb-md">How long does shipping take?</h3>
+                    <p>Standard shipping takes 3-5 business days. We offer free shipping on orders over $50. For expedited shipping (2-3 business days), an additional fee applies.</p>
+                </div>
+                
+                <div class="section-divider"></div>
+                
+                <div>
+                    <h3 class="mb-md">What's your return policy?</h3>
+                    <p>We offer a 30-day return policy for unused products in their original packaging. If you're not completely satisfied, please contact our customer service team to initiate a return.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dean Earby</h3>
+                    <p>Premium unisex skincare essentials for the modern individual.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="shop.html">Shop</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Care</h3>
+                    <p><a href="about.html#shipping">Shipping & Returns</a></p>
+                    <p><a href="contact.html">Support</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Dean Earby. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dean Earby</title>
+    <meta name="description" content="Learn about Dean Earby's mission to create premium unisex skincare products that work for everyone.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <script src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
+</head>
+<body>
+    <div id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY" data-config-modal-style="side"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">Dean Earby</a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-icon" onclick="Snipcart.api.theme.cart.open()">
+                    🛒
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="hamburger" onclick="toggleMobileNav()">☰</button>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-links">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="shop.html" class="mobile-nav-link">Shop</a>
+                <a href="about.html" class="mobile-nav-link active">About</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Header -->
+    <section class="section" style="padding-top: calc(var(--header-height) + var(--spacing-2xl));">
+        <div class="container">
+            <h1 class="text-center mb-lg">Our Story</h1>
+            <p class="text-center mb-xl" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                Dean Earby was founded on a commitment to intentional skincare. We believe in the power of carefully crafted formulas, using only the finest ingredients to deliver visible results. Our journey began with a passion for simplicity, quality, and the daily ritual of self-care.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 class="mb-lg">Our Mission</h2>
+                <p class="mb-lg">At Dean Earby, our mission is to create skincare that is both purposeful and effective. Every product is thoughtfully developed with attention to detail, from ingredient selection to final packaging. We are dedicated to delivering products that elevate your routine, nurture your skin, and reflect our uncompromising standards for quality and care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section" style="background: var(--color-footer-bg);">
+        <div class="container">
+            <h2 class="text-center mb-xl">Our Values</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl);">
+                <div class="card" style="padding: var(--spacing-lg);">
+                    <h3 class="mb-md">Quality</h3>
+                    <p>We use only the finest ingredients, carefully selected for their efficacy and safety. Every product is formulated with dermatological expertise.</p>
+                </div>
+                <div class="card" style="padding: var(--spacing-lg);">
+                    <h3 class="mb-md">Craftsmanship</h3>
+                    <p>We take pride in our meticulous approach to formulation. Every product is crafted with care, attention to detail, and a dedication to delivering exceptional results you can see and feel.</p>
+                </div>
+                <div class="card" style="padding: var(--spacing-lg);">
+                    <h3 class="mb-md">Innovation</h3>
+                    <p>We continually refine our formulas and processes, seeking new ways to deliver exceptional results and elevate your skincare ritual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Philosophy -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 class="mb-lg">Our Product Philosophy</h2>
+                <p class="mb-lg">Each Dean Earby product is created with intention. We focus on essential, effective formulations that deliver real results without unnecessary complexity. Our products are designed to work together seamlessly, creating a routine that's both effective and enjoyable.</p>
+                <p class="mb-xl">We believe in transparency about our ingredients and processes. Every product comes with clear information about what's inside and why we chose each ingredient.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shipping & Returns -->
+    <section class="section" style="background: var(--color-footer-bg);" id="shipping">
+        <div class="container">
+            <h2 class="text-center mb-xl">Shipping & Returns</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="mb-lg">
+                    <h3 class="mb-md">Shipping</h3>
+                    <p class="mb-md">We offer free shipping on all orders over $100. Standard shipping takes 3-5 business days, while expedited shipping (2-3 business days) is available for an additional fee.</p>
+                    <p>All orders are carefully packaged to ensure your products arrive in perfect condition.</p>
+                </div>
+                
+                <div class="section-divider"></div>
+                
+                <div class="mb-lg">
+                    <h3 class="mb-md">Returns</h3>
+                    <p class="mb-md">We want you to love your Dean Earby products. If you're not completely satisfied, we offer a 30-day return policy for unused products in their original packaging.</p>
+                    <p>To initiate a return, please contact our customer service team with your order number and reason for return.</p>
+                </div>
+                
+                <div class="section-divider"></div>
+                
+                <div>
+                    <h3 class="mb-md">Customer Service</h3>
+                    <p class="mb-md">Our customer service team is here to help with any questions about our products, shipping, or returns. We typically respond within 24 hours.</p>
+                    <p>Contact us at <a href="mailto:support@deanearby.com">support@deanearby.com</a> or through our <a href="contact.html">contact form</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" style="background: var(--color-footer-bg);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="mb-lg">Our Philosophy</h2>
+                <p class="mb-lg">At Dean Earby, we believe exceptional skincare is the result of intention and care. Every formula is thoughtfully crafted with the highest quality ingredients, chosen for their effectiveness and purity. Our products are designed to elevate your daily ritual and deliver visible results you can trust.</p>
+                <p class="mb-xl">We are committed to sustainability, transparency, and creating products that not only perform, but also bring a sense of joy and mindfulness to your routine.</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dean Earby</h3>
+                    <p>Premium unisex skincare essentials for the modern individual.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="shop.html">Shop</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Care</h3>
+                    <p><a href="about.html#shipping">Shipping & Returns</a></p>
+                    <p><a href="contact.html">Support</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Dean Earby. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

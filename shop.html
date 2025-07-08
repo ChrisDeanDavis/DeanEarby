@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Dean Earby</title>
+    <meta name="description" content="Shop our complete collection of premium unisex skincare products. Serums, moisturizers, and beard care essentials.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <script src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
+</head>
+<body>
+    <div id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY" data-config-modal-style="side"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">Dean Earby</a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link active">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-icon" onclick="Snipcart.api.theme.cart.open()">
+                    🛒
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="hamburger" onclick="toggleMobileNav()">☰</button>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-links">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="shop.html" class="mobile-nav-link active">Shop</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shop Header -->
+    <section class="section" style="padding-top: calc(var(--header-height) + var(--spacing-2xl));">
+        <div class="container">
+            <h1 class="text-center mb-lg">Shop Our Collection</h1>
+            <p class="text-center mb-xl" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+                Discover our complete range of premium unisex skincare essentials. Each product is thoughtfully formulated to work with your unique skin type and lifestyle.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Hydrating Serum -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop" alt="Hydrating Serum" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Hydrating Serum</h3>
+                        <p class="product-description">A lightweight, fast-absorbing serum that delivers intense hydration and plumps the skin with hyaluronic acid and vitamin B5.</p>
+                        <div class="product-price">$68</div>
+                        <div class="product-actions">
+                            <button class="btn snipcart-add-item" 
+                                data-item-id="hydrating-serum"
+                                data-item-price="68.00"
+                                data-item-url="https://dean-earby.com"
+                                data-item-description="A lightweight, fast-absorbing serum that delivers intense hydration and plumps the skin."
+                                data-item-image="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop"
+                                data-item-name="Hydrating Serum">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beard Balm -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=400&fit=crop" alt="Beard Balm" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Beard Balm</h3>
+                        <p class="product-description">Nourishing beard balm with natural oils to condition, style, and promote healthy growth. Suitable for all beard types.</p>
+                        <div class="product-price">$42</div>
+                        <div class="product-actions">
+                            <button class="btn snipcart-add-item" 
+                                data-item-id="beard-balm"
+                                data-item-price="42.00"
+                                data-item-url="https://dean-earby.com"
+                                data-item-description="Nourishing beard balm with natural oils to condition, style, and promote healthy growth."
+                                data-item-image="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=400&fit=crop"
+                                data-item-name="Beard Balm">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Daily Moisturizer -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop" alt="Daily Moisturizer" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Daily Moisturizer</h3>
+                        <p class="product-description">A rich, non-greasy moisturizer that provides 24-hour hydration for all skin types. Formulated with ceramides and niacinamide.</p>
+                        <div class="product-price">$58</div>
+                        <div class="product-actions">
+                            <button class="btn snipcart-add-item" 
+                                data-item-id="daily-moisturizer"
+                                data-item-price="58.00"
+                                data-item-url="https://dean-earby.com"
+                                data-item-description="A rich, non-greasy moisturizer that provides 24-hour hydration for all skin types."
+                                data-item-image="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop"
+                                data-item-name="Daily Moisturizer">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vitamin C Serum -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop" alt="Vitamin C Serum" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Vitamin C Serum</h3>
+                        <p class="product-description">Brightening serum with stabilized vitamin C to even skin tone, reduce dark spots, and protect against environmental damage.</p>
+                        <div class="product-price">$72</div>
+                        <div class="product-actions">
+                            <button class="btn snipcart-add-item" 
+                                data-item-id="vitamin-c-serum"
+                                data-item-price="72.00"
+                                data-item-url="https://dean-earby.com"
+                                data-item-description="Brightening serum with stabilized vitamin C to even skin tone and reduce dark spots."
+                                data-item-image="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop"
+                                data-item-name="Vitamin C Serum">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Face Cleanser -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop" alt="Gentle Face Cleanser" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Gentle Face Cleanser</h3>
+                        <p class="product-description">A gentle, pH-balanced cleanser that removes impurities without stripping the skin. Suitable for daily use.</p>
+                        <div class="product-price">$38</div>
+                        <div class="product-actions">
+                            <button class="btn snipcart-add-item" 
+                                data-item-id="face-cleanser"
+                                data-item-price="38.00"
+                                data-item-url="https://dean-earby.com"
+                                data-item-description="A gentle, pH-balanced cleanser that removes impurities without stripping the skin."
+                                data-item-image="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop"
+                                data-item-name="Gentle Face Cleanser">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eye Cream -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop" alt="Eye Cream" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Eye Cream</h3>
+                        <p class="product-description">Lightweight eye cream that reduces puffiness, dark circles, and fine lines around the delicate eye area.</p>
+                        <div class="product-price">$52</div>
+                        <div class="product-actions">
+                            <button class="btn snipcart-add-item" 
+                                data-item-id="eye-cream"
+                                data-item-price="52.00"
+                                data-item-url="https://dean-earby.com"
+                                data-item-description="Lightweight eye cream that reduces puffiness, dark circles, and fine lines."
+                                data-item-image="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop"
+                                data-item-name="Eye Cream">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dean Earby</h3>
+                    <p>Premium unisex skincare essentials for the modern individual.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="shop.html">Shop</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Care</h3>
+                    <p><a href="about.html#shipping">Shipping & Returns</a></p>
+                    <p><a href="contact.html">Support</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Dean Earby. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
